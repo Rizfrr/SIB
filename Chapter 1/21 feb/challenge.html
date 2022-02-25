@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../17 feb - framework css (bootstrap)/css/bootstrap.min.css" />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary px-5 mt-3 sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fw-bolder">
+                        <li class="nav-item px-2">
+                            <a class="nav-link rounded-pill active" aria-current="page" href="#our_service">Our Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link rounded-pill" href="#why_us">Why Us</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link rounded-pill" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link rounded-pill" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link btn btn-success fw-bold rounded-pill" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Akhir Navbar -->
+
+        <!-- Carousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="background-color: #f1f3ff">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner container pt-3">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row align-items-center container">
+                        <div class="col-sm-6">
+                            <h5>Sewa & Rental Mobil Terbaik di Daerah Jawa Tengah</h5>
+                            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                            <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="./kucing.jpg" class="d-block w-100" alt="./kucing.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row align-items-center container">
+                        <div class="col-sm-6">
+                            <h1>Slide 2</h1>
+                            <h5>Sewa & Rental Mobil Terbaik di Daerah Jawa Tengah</h5>
+                            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                            <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="./kucing.jpg" class="d-block w-100" alt="./kucing.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center container">
+                        <div class="col-sm-6">
+                            <h1>Slide 3</h1>
+                            <h5>Sewa & Rental Mobil Terbaik di Daerah Jawa Tengah</h5>
+                            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                            <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="./kucing.jpg" class="d-block w-100" alt="./kucing.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#ffffff"
+                    fill-opacity="1"
+                    d="M0,96L34.3,112C68.6,128,137,160,206,181.3C274.3,203,343,213,411,229.3C480,245,549,267,617,272C685.7,277,754,267,823,224C891.4,181,960,107,1029,112C1097.1,117,1166,203,1234,218.7C1302.9,235,1371,181,1406,154.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+                ></path>
+            </svg>
+        </div>
+
+        <!-- Akhir Carousel -->
+
+        <!-- Our Service -->
+        <section id="our_service" class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./kucing.jpg" class="d-block w-100" alt="./kucing.jpg" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>Best Car Rental for any kind of trip in (Lokasimu)!</h1>
+                        <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+                        <li>Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+                        <li>Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+                        <li>Sewa Mobil Jangka Panjang Bulanan</li>
+                        <li>Gratis Antar - Jemput Mobil di Bandara</li>
+                        <li>Layanan Airport Transfer / Drop In Out</li>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#f1f3ff"
+                    fill-opacity="1"
+                    d="M0,96L30,117.3C60,139,120,181,180,181.3C240,181,300,139,360,133.3C420,128,480,160,540,170.7C600,181,660,171,720,181.3C780,192,840,224,900,202.7C960,181,1020,107,1080,85.3C1140,64,1200,96,1260,90.7C1320,85,1380,43,1410,21.3L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+                ></path>
+            </svg>
+        </section>
+        <!-- Akhir Our Service -->
+
+        <!-- Why Us -->
+        <section id="why_us" style="background-color: #f1f3ff">
+            <div class="container">
+                <h1>Why Us?</h1>
+                <p>Mengapa harus pilih Binar Car Rental?</p>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#ffffff"
+                    fill-opacity="1"
+                    d="M0,32L30,37.3C60,43,120,53,180,96C240,139,300,213,360,224C420,235,480,181,540,176C600,171,660,213,720,202.7C780,192,840,128,900,138.7C960,149,1020,235,1080,245.3C1140,256,1200,192,1260,154.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+                ></path>
+            </svg>
+        </section>
+        <!-- Akhir Why Us -->
+
+        <!-- Testimonial -->
+        <section id="testimonial">
+            <div class="container text-center">
+                <h1>Testimonial</h1>
+                <p>Berbagai review positif dari para pelanggan kami</p>
+            </div>
+        </section>
+        <!-- Akhir Testimonial -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container text-center text-white" style="background-color: blue">
+                <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
+            </div>
+        </section>
+        <!-- End Cta Section -->
+
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Frequently Asked Question</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Frequently Asked Question</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir FAQ -->
+        <script src="../17 feb - framework css (bootstrap)/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

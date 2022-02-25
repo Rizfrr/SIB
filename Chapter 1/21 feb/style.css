@@ -1,0 +1,4 @@
+.navbar a:hover,
+.navbar .active {
+    background: #ef6603;
+}

@@ -1,0 +1,10 @@
+.navbar a:hover,
+.navbar .active {
+    background: #ef6603;
+}
+#our_services i {
+    color: blue;
+}
+#footer .hitam a {
+    color: black;
+}

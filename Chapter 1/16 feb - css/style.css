@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}
+h2 {
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+    text-align: center;
+}
+h6 {
+    color: brown;
+    font-size: 16px;
+}
+.text {
+    padding: 100px 30px;
+}

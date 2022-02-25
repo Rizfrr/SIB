@@ -1,0 +1,7 @@
+Terdapat 3 cara menggunakan css:
+1. eksternal css
+2. internal css (lebih prioritas dari eksternal css)
+3. inline css (paling prioritas)
+
+pading -> jarak teks didalamnya dengan kontainernya
+margin -> jarak tepi dengan kontainer
