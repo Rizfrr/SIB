@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      possimus facilis cumque provident sapiente unde est illum! Obcaecati, odit
+      exercitationem.
+    </p>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      possimus facilis cumque provident sapiente unde est illum! Obcaecati, odit
+      exercitationem.
+    </p>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      possimus facilis cumque provident sapiente unde est illum! Obcaecati, odit
+      exercitationem.
+    </p>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      possimus facilis cumque provident sapiente unde est illum! Obcaecati, odit
+      exercitationem.
+    </p>
+
+    <h1>Aplikasi ubah warna</h1>
+    <div>
+      <label for="">Background Color</label>
+      <input type="color" id="backgroud-color" />
+      <label for="">Text Color</label>
+      <input type="color" id="text-color" />
+    </div>
+
+    <script type="text/javascript">
+      // access the app id
+      var app = document.getElementById("app");
+
+      // Add text inside the app id
+      app.innerHTML = "hello world";
+
+      // Add css to app id
+      app.style.color = "#cccccc";
+      // app.style.backgroundColor = "#333333";
+
+      // Make dokument background color dark
+      // document.body.style.backgroundColor = "#333333";
+    </script>
+    <script type="text/javascript">
+      // access the paragraph class
+      var paragraph = document.getElementsByClassName("paragraph");
+
+      // Add css to paragraph class
+      paragraph[2].style.color = "#cccccc";
+      paragraph[1].style.backgroundColor = "#fff";
+
+      // Make paragraph 4 color change
+      setTimeout(function () {
+        paragraph[3].style.color = "rgb(74, 131, 255)";
+        paragraph[3].style.backgroundColor = "#fff";
+      }, 3000);
+      setInterval(function () {
+        paragraph[0].style.color = "rgb(74, 131, 255)";
+        paragraph[0].style.backgroundColor = "#fff";
+      }, 1000);
+      setInterval(function () {
+        paragraph[0].style.color = "rgb(255, 35, 35)";
+        paragraph[0].style.backgroundColor = "#1eeeee";
+      }, 2000);
+    </script>
+    <script>
+      // add element with id title
+      var title = document.createElement("h1");
+
+      // add text inside title
+      title.textContent = "add element DOM";
+      title.style.color = "#cccccc";
+      title.style.backgroundColor = "#333333";
+
+      // add title to body
+      document.body.append(title);
+
+      // remove title
+      setTimeout(() => {
+        title.remove();
+      }, 5000);
+    </script>
+    <!-- Tombol Ubah Warna -->
+    <script>
+      // get element by Id
+      var bgColor = document.getElementById("backgroud-color");
+      var textColor = document.getElementById("text-color");
+
+      bgColor.addEventListener("change", function () {
+        document.body.style.backgroundColor = bgColor.value;
+      });
+      textColor.addEventListener("change", function () {
+        document.body.style.color = textColor.value;
+      });
+    </script>
+  </body>
+</html>
