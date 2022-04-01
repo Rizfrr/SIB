@@ -1,0 +1,8 @@
+{
+  "name": "My-App",
+  "version": "1.0.0",
+  "description": "This is my first node app",
+  "main": "index.js",
+  "author": "Rizal",
+  "license": "MIT"
+}
