@@ -1,0 +1,58 @@
+<div class="container">
+  <form class="col s12" id="input-form">
+    <h2 id="headText">User List</h2>
+    <p class="lead">Hear you can add and delete your user list</p>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <select name="driver" id="driver">
+          <option value="" selected>Pilih Tipe Driver</option>
+          <option value="1">Dengan Sopir</option>
+          <option value="2">Tanpa Sopir (Lepas Kunci)</option>
+        </select>
+        <label for="driver">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input type="date" id="tanggal" />
+        <label for="tanggal">Last Name</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input type="time" id="waktu" />
+        <label for="waktu">Eamil Address</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <input type="number" id="penumpang" />
+        <label for="penumpang"></label>
+      </div>
+    </div>
+
+    <input type="submit" class="btn" value="Submit" />
+  </form>
+
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" id="search" />
+      <label for="search">Search</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <table class="striped">
+      <thead class="teal lighten-2 white-text">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Eamil</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="user-list"></tbody>
+    </table>
+  </div>
+</div>
