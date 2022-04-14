@@ -1,0 +1,31 @@
+start server postgre
+```
+sudo service postgresql start
+```
+
+start psql
+```
+sudo -i -u postgres psql
+```
+
+Edit kolom
+```
+ALTER TABLE articles
+ADD COLUMN created_at TIMESTAMP NOT NULL DEFAULT NOW();
+```
+
+tambah data 
+```
+INSERT INTO articles (
+ title,
+ body,
+ approved
+) VALUES ('Hello World', 'Lorem Ipsum Dolor Sit Amet', TRUE);
+INSERT 0 1
+```
+//! postgre tidak bisa pake petik dua (" ") untuk string
+
+ganti database
+```
+\c chapter_5_top_5
+```
