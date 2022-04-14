@@ -1,0 +1,65 @@
+Cara membuat projek
+
+awalan
+```
+npm init -y
+```
+
+install sequelize
+```
+npm install sequelize-cli -g
+```
+```
+yarn global add sequelize-cli
+```
+
+tambah sequelize ke projek
+```
+npm i sequelize
+```
+
+install pg for database
+```
+npm i pg
+```
+```
+yarn add pg
+```
+
+buat database
+```
+sequelize db:create
+```
+
+start server postgre
+```
+sudo service postgresql start
+```
+
+membuat model
+```
+sequelize model:generate --name Article --attributes title:string,body:text,approved:boolean
+```
+
+jalankan migrate
+```
+sequelize db:migrate
+```
+
+ganti database
+```
+\c chapter_5_top_5
+```
+
+liat isi database
+```
+\dt
+```
+
+liat isi tabel
+```
+SELECT * FROM public."Articles";
+```
+
+
+
