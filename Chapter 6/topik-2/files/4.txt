@@ -1,0 +1,3 @@
+ini nomor satu
+ini yang kedua
+dan ini ketiga
