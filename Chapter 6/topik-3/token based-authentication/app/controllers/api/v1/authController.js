@@ -76,7 +76,15 @@ module.exports = {
       return;
     }
 
-    const token = createToken(JSON.parse(JSON.stringify(user)));
+    const token = createToken(
+      // JSON.parse(JSON.stringify(user))
+      {
+        id: user.id,
+        email: user.email,
+        createdAt: user.createdAt,
+        updatedAt: user.updatedAt,
+      }
+    );
 
     res.status(201).json({
       id: user.id,
