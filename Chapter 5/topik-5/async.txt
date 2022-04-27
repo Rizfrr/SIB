@@ -1,0 +1,6 @@
+async
+await
+
+sama dengan
+
+then (promise)
