@@ -40,6 +40,10 @@ function createToken(data) {
   });
 }
 
+function verifyToken(token) {
+  return jwt.verify(token, process.env.JWT_SECRET || "secret");
+}
+
 module.exports = {
   async register(req, res) {
     const email = req.body.email;
@@ -93,5 +97,32 @@ module.exports = {
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
     });
+  },
+
+  async whoAmI(req, res) {
+    res.status(200).json(req.user);
+  },
+
+  async authorize(req, res, next) {
+    try {
+      const bearerToken = req.headers.authorization;
+      const token = bearerToken.split("Bearer ")[1];
+      const tokenPayLoad = verifyToken(token);
+
+      req.user = JSON.parse(
+        JSON.stringify(await User.findByPk(tokenPayLoad.id))
+      );
+      next();
+    } catch (error) {
+      console.log(error);
+      if (error.message.includes("jwt expired")) {
+        res.status(401).json({ message: "Token expired" });
+        return;
+      }
+
+      res.status(401).json({
+        message: "Unauthorized",
+      });
+    }
   },
 };
