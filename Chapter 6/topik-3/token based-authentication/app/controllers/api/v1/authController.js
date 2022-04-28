@@ -112,6 +112,7 @@ module.exports = {
       req.user = JSON.parse(
         JSON.stringify(await User.findByPk(tokenPayLoad.id))
       );
+      delete req.user.encryptedPassword;
       next();
     } catch (error) {
       console.log(error);
