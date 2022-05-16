@@ -1,0 +1,15 @@
+1
+yarn init -y
+
+2
+yarn add express swagger-ui-express
+
+3
+curl https://gitlab.com/sme-kampus-merdeka/fullstack-web-developer/chapter-6/topic-4/open-api-example/-/raw/main/openapi.yaml\?inline\=false --output openapi.yaml
+
+4
+yarn add yamljs
+
+5
+yarn add redoc-express
+
