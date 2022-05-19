@@ -1,0 +1,7 @@
+01. yarn create react-app topic-1
+
+02. masuk ke folder
+
+03. yarn start
+
+04. 

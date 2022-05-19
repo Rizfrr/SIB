@@ -1,0 +1,10 @@
+01. yarn create react-app topic-2
+
+02. yarn add react-router-dom@6
+
+https://jsonplaceholder.typicode.com/
+asyn await
+
+yarn add react-bootstrap bootstrap
+
+03. 
