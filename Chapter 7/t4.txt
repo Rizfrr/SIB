@@ -1,0 +1,5 @@
+yarn add redux-devtools-extension
+
+yarn add redux redux-thunk
+
+yarn add @reduxjs/toolkit
